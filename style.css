@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #C0C0C0;
+}
+
+h1 {
+    color: #db3636;
+}
+
+p,
+label {
+    color: #000000;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #ff8c00;
+}
+
+.header h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: #1b147e;
+    border-bottom: 2px solid #1b147e;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: #d80835;
+}
+
+.box-input {
+    margin-bottom: 35px;
+}
+
+.block {
+    display: block;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    background-color: #1b147e;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    border-color: #1b147e;
+    color: #1b147e;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999494; /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.modal-content p {
+    color: #008000;
+}

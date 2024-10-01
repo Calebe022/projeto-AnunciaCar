@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnunciaCar</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu veículo para acelerar a venda!</h3>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-header">
+            <p>Formulário</p>
+        </div>
+
+        <div class="form-body">
+            <h1 class="form-title">Venda seu carro de forma rápida e prática!</h1>
+            <p>Descreva as características e selecione os opcionais disponíveis.</p>
+        </div>
+
+        <form id="carForm">
+            <div class="box-input">
+                <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="title" 
+                id="title" 
+                class="block" 
+                placeholder="Um título para anunciar seu carro"
+                minlength="1"
+                maxlength="30"
+                required>
+                <small class="error" id="titleError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="price">Preço <span class="required-field">*</span></label>
+                <input 
+                type="number" 
+                name="price" 
+                id="price" 
+                class="block" 
+                placeholder="Defina o preço"
+                required>
+                <small class="error" id="priceError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="description">Descrição <span class="required-field">*</span></label>
+                <textarea 
+                name="description" 
+                id="description" 
+                class="block" 
+                placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão"
+                required></textarea>
+                <small class="error" id="descriptionError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="brand">Marca <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="brand" 
+                id="brand" 
+                class="block" 
+                placeholder="Digite a marca do veículo"
+                required>
+                <small class="error" id="brandError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="model">Modelo <span class="required-field">*</span></label>
+                <input 
+                type="text" 
+                name="model" 
+                id="model" 
+                class="block" 
+                placeholder="Digite o modelo do veículo"
+                required>
+                <small class="error" id="modelError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="mileage">Kilometragem <span class="required-field">*</span></label>
+                <input 
+                type="number" 
+                name="mileage" 
+                id="mileage" 
+                class="block" 
+                placeholder="Digite a kilometragem do veículo"
+                required>
+                <small class="error" id="mileageError"></small>
+            </div>
+
+            <div class="box-input">
+                <label for="purchase-date">Data de compra <span class="required-field">*</span></label>
+                <input 
+                type="date" 
+                name="purchase-date" 
+                id="purchase-date" 
+                class="block" 
+                required>
+                <small class="error" id="purchaseDateError"></small>
+            </div>
+
+            <div class="box-input">
+                <p>Tipo de câmbio: <span class="required-field">*</span></p>
+                <input type="radio" id="manual" name="gear" value="Manual" required>
+                <label for="manual">Manual</label>
+                <input type="radio" id="auto" name="gear" value="Automático" required>
+                <label for="auto">Automático</label>
+                <small class="error" id="gearError"></small>
+            </div>
+
+            <div class="box-input">
+                <p>Fotos do Carro: <span class="required-field">*</span></p>
+                <input 
+                type="file" 
+                multiple 
+                accept="image/png, image/jpg" 
+                id="images" 
+                name="images" 
+                required>
+                <small class="error" id="imagesError"></small>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn-submit">
+        </form>
+    </div>
+    <div id="successMessage" class="modal">
+        <div class="modal-content">
+            <p>Formulário enviado com sucesso!✅</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
